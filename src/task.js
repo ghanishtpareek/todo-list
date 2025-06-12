@@ -3,10 +3,11 @@ export default class Task {
     #description = "A new task"
     #dueDate
     #priority = "low"
+    #dateCreated = new Date()
     static validPriorities = ["low", "medium", "high"]
 
     constructor(name, description, priority, dueDate) {
-        alert("hello class task")
+        console.log("hello class task")
 
         if (!dueDate) {
             //if no date provided sets tomrrow as due date
@@ -53,6 +54,10 @@ export default class Task {
 
     get priority() {
         return this.#priority
+    }
+
+    get dateCreated(){
+        return this.#dateCreated
     }
 
     set priority(priorityLevel){
