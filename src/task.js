@@ -16,7 +16,7 @@ export default class Task {
             this.#dueDate = tomorrow
         }
         else {
-            if (duedate instanceof Date) {
+            if (dueDate instanceof Date) {
                 this.#dueDate = dueDate
             }
             else {
