@@ -38,6 +38,8 @@ export default class Task {
         else{
             console.log("priority incorrect setting priority low")
         }
+
+        console.log("inside task class of a new item of task class")
     }
 
     get name() {
